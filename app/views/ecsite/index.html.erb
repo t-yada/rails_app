@@ -1,0 +1,11 @@
+<% @data.each do |contents| %>
+    <div class="media">
+        <div class="media-body">
+<!--            <h2 class="media-heading"><a href="/<%= contents.id %>"><%= contents.title %></a></h2> -->
+            <a href="/<%= contents.id %>"><img src="/hoge.jpg" width="600px"></a>
+<!--            <p><%= contents.contenttxt %></p> -->
+        </div>
+    </div>
+<hr />
+<% end %>
+<%= will_paginate @data %>
